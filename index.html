@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming soon Page</title>
+    <title>Angular-JS</title>
     <link rel="icon" href="favicon.ico" type="image/ico">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -16,40 +16,74 @@
   </head>
   <body>
 
-<section id="home">
-  <div class="cover-container">
-    <div class="inner-cover text-sm-center">
-      <img src="img/my-logo.png" alt="logo" class="img-fluid">
-      <h1 class="display-6 hero-heading">Watch out our modern responsive website</h1>
-      <ul class="list-unstyled d-inline-flex social">
-        <li><a class="social-link" href=""><i class="fa fa-youtube"></i></a></li>
-        <li><a class="social-link" href=""><i class="fa fa-twitter"></i></a></li>
-        <li><a class="social-link" href=""><i class="fa fa-facebook"></i></a></li>
-        <li><a class="social-link" href=""><i class="fa fa-google-plus"></i></a></li>
-      </ul>
-      <div class="my-counting">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse mb-4">
+     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <a class="navbar-brand" href="#">Angular Js</a>
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item active">
+           <a class="nav-link" href="#">Jquery <span class="sr-only">(current)</span></a>
+         </li>
+     </div>
+   </nav>
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4>Click on the step1 and step2 to use show and hide methos using jquery</h4>
+        <p>This is some of the situations that angular js comes into handy.</p>
+        <button id="bttnstep1" class="btn btn-outline-primary" role="button">Step1</button>
+        <button id="bttnstep2" class="btn btn-outline-primary" role="button">Step2</button>
+        <div id="step1">
+          <h4>The problem(s) Angular JS trying to solve</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eius soluta minus, unde a, magnam.
+            Minima officia voluptates facere, quia non culpa, error labore quibusdam, inventore necessitatibus, magni. Nam, illum!</p>
+        </div>
+        <div id="step2">
+          <h4>Super difficult if there is more number of steps like this</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eius soluta minus, unde a, magnam.
+          Minima officia voluptates facere, quia non culpa, error labore quibusdam, inventore necessitatibus, magni. Nam, illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eius soluta minus, unde a, magnam.
+            Minima officia voluptates facere, quia non culpa, error labore quibusdam, inventore necessitatibus, magni. Nam, illum!</p>
+          </div>
       </div>
-
-      </div>
-
-    </div>
   </div>
-
+</div>
 </section>
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4>Custom Attributes</h4>
+          <p>lets say h1 reply= "something" . This doesn't do anythin because reply is not a valid html 5 attribute but what about if we say h1 data-reply="something" which is a valid html 5 attribute. For angular js we use custom attributes like this  h1 ng-reply = "something" which can't be shown in the browser but if we console.log that in a js file the custom attribute will be sitting on the memory and we can do something with that. </p>
+          <h1 ng-reply="Hello Back">Hello you!</h1>
+            <p> If you check in the consle window you should able to see a "Hello back" because I already added javascript file for console.log of ng-reply attribute</p>
+      </div>
+  </div>
+</div>
+</section>
 
-
-
-
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3> Angular JS </h3>
+          <div ng-controller ="mainController">
+              <h4> Hello babies all over the world! </h4>
+          </div>
+  </div>
+</div>
+</div>
+</section>
 
   <!--javascript and jqurey--->
     <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
     <script src="js/custom.js"></script>
-
-
   </body>
 </html>
